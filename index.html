@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Portfolio</title>
+    <style>
+      video {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Source Code Pro", monospace;
+        font-size: 20px;
+        background-color: rgb(255, 235, 255);
+        color: black;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: rgb(255, 132, 151);
+        padding: 20px 0;
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      header h1 {
+        font-size: 50px;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 24px;
+        text-transform: uppercase;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      nav a:hover {
+        color: rgb(255, 235, 255);
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin: 0px;
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      h2 {
+        font-size: 45px;
+        margin-top: 40px;
+        color: rgb(80, 30, 30);
+      }
+
+      .content {
+        margin-top: 20px;
+        padding: 20px;
+      }
+
+      .section-title {
+        font-size: 36px;
+        margin-top: 50px;
+        color: rgb(80, 30, 30);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .section {
+        padding: 30px;
+        margin: 20px auto;
+        max-width: 10000px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: rgb(255, 255, 255);
+        color: rgb(80, 30, 30);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .section:hover {
+        transform: translateY(-5px);
+        background-color: rgb(255, 240, 255);
+      }
+
+      #about {
+        background-color: rgb(255, 199, 213);
+      }
+
+      #achievements {
+        background-color: rgb(255, 174, 190);
+      }
+
+      #skills {
+        background-color: rgb(255, 186, 202);
+      }
+
+      #projects {
+        background-color: rgb(255, 168, 182);
+      }
+
+      #hobbies {
+        background-color: rgb(255, 200, 211);
+      }
+
+      #contact {
+        background-color: rgb(255, 187, 201);
+      }
+
+      #gallery {
+        background-color: rgb(255, 220, 230);
+      }
+
+      a {
+        color: rgb(0, 102, 204);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: rgb(255, 132, 151);
+        text-decoration: underline;
+      }
+
+      .gallery-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .gallery-item {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: rgb(255, 240, 255);
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.05);
+        
+      }
+
+      footer {
+        margin-top: 40px;
+        padding: 10px;
+        background-color: rgb(255, 132, 151);
+        color: white;
+        text-align: center;
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Khurt's Portfolio</h1>
+      <nav>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#hobbies" class="nav-link">Hobbies</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+      </nav>
+    </header>
+
+    <div class="content" id="home">
+      <h2>Introduction</h2>
+      <img src="images/Khurt.jpg" alt="Profile Picture" />
+      <p>
+        Hello, my name is Kirsten Khurt D. Reboredo. I'm an IT student at UE
+        Caloocan, and I have a passion for technology and learning.
+        <br /><br />Here is my portfolio for you!
+      </p>
+    </div>
+
+    <section id="about" class="section">
+      <h3 class="section-title">About Me</h3>
+      <p>
+        I'm Khurt, I always want to improve myself. I always try my best.
+      </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/clvEh7SO3to?si=6RQmw1zp0NT-AZ7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="achievements" class="section">
+      <h3 class="section-title">Achievements</h3>
+      <p>
+        - Grade 8 Chess Champion at LCC-C <br />- Grade 11 with Honors at UE-C
+        <br />- Grade 12 with Honors at UE-C <br />- Placed 2nd Place in The:
+        ACSS x AEES Tekken Tournament <br />- Presenter in the 5th PUNLASIK
+        Research Conference at UE-C
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h3 class="section-title">Skills</h3>
+      <p>
+        <strong>Technical:</strong> Python Programming, Video Editing, Photo Editing,
+        Audio Editing, Drawing <br /><strong>Non-Technical:</strong> Efficient,
+        Communication, Problem-Solving, Adaptiveness, Cooperative
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h3 class="section-title">Projects & Activities</h3>
+      <p>
+        - <strong>Personal Website:</strong> Built this portfolio website using
+        HTML, CSS, and JavaScript. <br />-
+        <strong>5th PUNLASIK Research Conference:</strong> One of the presenters
+        of our research in the event. <br />-
+        <strong>UE Tekken Event:</strong> Participated in a ACSS x AEES Tekken
+        Rumble.
+      </p>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="images/website.jpg" alt="Gallery Image 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/researchpresenter.jpg" alt="Gallery Image 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/tekken.jpg" alt="Gallery Image 3" />
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies" class="section">
+      <h3 class="section-title">Hobbies and Interests</h3>
+      <p>
+        - I really love gaming, it is a big part of my life.
+        <br />- I am currently learning on how to draw anime.
+        <br />- I really admire art! 
+        <br />- I really like to play badminton though I do not have anyone to play with so I stopped.
+        <br />- I am always up to play tekken!
+        <br />- These days, I've been playing a lot of Overwatch and Dota 2.
+        <br />- I love surrounding myself with positive people, It brings out the best of myself.
+        <br />- I always want to have fun so I like to be silly a lot!
+      </p>
+    </section>
+
+    <section id="gallery" class="section">
+      <h3 class="section-title">Gaming Section</h3>
+      <p>Here are some clips to showcase how I really love gaming!</p>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/t7VGXV1Qczs?si=0y7FCOafpV96t05V&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="gallery-item">
+          <iframe width="100%" height="300" src="https://www.youtube.com/embed/8PPo5vwrFTw?si=Bcy3ifreRS-jUwgt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="gallery-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Lzrz2CtLPxE?si=cza24XZSev8tjjK1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="gallery-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qX_TGoOlXe0?si=jhWH3kpUOHQ-VGnp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="gallery-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_suWePFPSgU?si=xauSLJW9O_F1PMG9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="gallery-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WHgwQqKzMxg?si=pEx0Og5FjkmtuvTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="gallery-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/e0p1mZgtkcE?si=CQKTl2-YB5_moXtx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="gallery-item">
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/a5sKM06QHWc?si=e-ed5X5zljioiPhX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="gallery-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BBhYE_W5YIQ?si=_IyJ5XYMd1XkRvwt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="gallery-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2TCf20udLpk?si=l5K8kHF4rXhe6P5G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h3 class="section-title">Art Section</h3>
+      <p>Here are some of my drawings, I'm currently learning art.</p>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="images/animegirl.jpg" alt="Drawing1" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/animegirl2.jpg" alt="Drawing2" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/g1.jpg" alt="Drawing1" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/g2.jpg" alt="Drawing2" />
+            </div>
+            <div class="gallery-item">
+              <img src="images/g3.jpg" alt="Drawing1" />
+            </div>
+            <div class="gallery-item">
+              <img src="images/g4.jpg" alt="Drawing2" />
+              </div>
+              <div class="gallery-item">
+                <img src="images/g5.jpg" alt="Drawing1" />
+              </div>
+              <div class="gallery-item">
+                <img src="images/g6.jpg" alt="Drawing2" />
+                </div>
+                <div class="gallery-item">
+                  <img src="images/g7.jpg" alt="Drawing1" />
+                </div>
+                <div class="gallery-item">
+                  <img src="images/g8.jpg" alt="Drawing2" />
+                  </div>
+                              
+        </section>
+
+        <section id="gallery" class="section">
+          <h3 class="section-title">Khurt's section</h3>
+          <p>Here are some pics of me and my frendz.</p>
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <img src="images/Khurt.jpg" alt="Drawing1" >
+            </div>
+            <div class="gallery-item">
+              <img src="images/Khurt2.jpg" alt="Drawing1" >
+            </div>
+            <div class="gallery-item">
+              <img src="images/Khurt3.jpg" alt="Drawing1" >
+            </div>
+            <div class="gallery-item">
+              <img src="images/Khurt4.jpg" alt="Drawing1" >
+            </div>
+            <div class="gallery-item">
+              <img src="images/Khurt5.jfif" alt="Drawing1" >
+            </div>
+          </div>
+        </section>
+
+    <section id="contact" class="section">
+      <h3 class="section-title">Contact</h3>
+      <p>
+        Feel free to reach out to me!
+        <br />Email:
+        <a href="mailto:reboredokhurt@yahoo.com.ph"
+          >reboredokhurt@yahoo.com.ph</a
+        >
+        <br />Facebook:
+        <a href="https://www.facebook.com/whachakhurt" target="_blank"
+          >https://www.facebook.com/whachakhurt</a
+        >
+        <br />Instagram:
+        <a href="https://www.instagram.com/khurt.exe/" target="_blank"
+          >https://www.instagram.com/khurt.exe/</a
+        >
+        <br />Steam:
+        <a href="https://steamcommunity.com/id/091705" target="_blank"
+          >Steam Profile</a><br />Discord: @khurt.exe
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Khurt. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
